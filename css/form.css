@@ -1,0 +1,115 @@
+.no_display{
+	display: none;
+}
+
+.full{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999999;
+	background-color: rgba(0, 19, 24,0.7);
+}
+
+.inputs_form{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 532px;
+    min-width: 250px;
+    width:33.25%;
+    max-height: 675px;
+    min-height: 200px;
+    height:auto;
+	padding: 2.06% 2.43%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+.inputs_form input{
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	border-bottom: 2px solid rgb(126, 184, 219);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font: normal 16px/normal "Times New Roman", Times, serif;
+	color: #ffffff;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background-color: transparent;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.form_hr_1{
+    width: 261px;
+    height: 2px;
+    background-color: rgb(126, 184, 219);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 0px solid #000;
+}
+
+.form_hr_2{
+    width: 110px;
+    height: 2px;
+    background-color: rgb(126, 184, 219);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 0px solid #000;
+}
+
+.form_title{
+    width: auto;
+	text-align: center;
+	color: #fff;
+	font-family: LatoRegular;
+	font-size: 13px;
+}
+
+.inputs_form button{
+	width: 224px;
+	height: 47px;
+	border-radius: 3px;
+	background-color: rgb(62, 181, 241);
+	/* margin-top: 11%; */
+    position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(255, 255, 255);
+	font-family: LatoRegular;
+	font-size: 33px;
+	border: none
+}
+
+.big{
+	font-size: 28px;
+}
+
+.small_1{
+	font-size: 11px;
+	font-family: LatoBold;
+}
+
+.confirm{
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 15%;
+	/* margin-top: 20%; */
+}
