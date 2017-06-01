@@ -46,6 +46,7 @@ $(document).ready(function() {
         e.stopPropagation();
     });
 
+
     // $(".submenu_s1").hover(function(){
     //     $(".submenu_1").toggle()
     // });
@@ -54,18 +55,18 @@ $(document).ready(function() {
     //     $(".menu_nav").toggleClass("x");
     // });
 
-    // $('.slider').owlCarousel({
-    //     items : 1,
-    //     // animateIn: 'fadeIn',
-    //     // animateOut: 'fadeOut',
-    //     slideSpeed : 3000,
-    //     nav: true,
-    //     autoplay: true,
-    //     autoplaytimeout:500,
-    //     loop: true,
-    //     navText: ["<img src='img/arrow_l.png'>","<img src='img/arrow_r.png'>"]
-    //     // autoplayHoverPause:true,
-    // });
+    $('.slider1.owl-theme').owlCarousel({
+        items : 1,
+        autoplay: true,
+        loop: true,
+        // nav: false,
+        navText: ["<",">"],
+        autoplayHoverPause:true,
+    });
 
 
 });
+    
+    function myFunction(x) {
+    x.classList.toggle("change");
+}
