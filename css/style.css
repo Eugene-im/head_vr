@@ -184,6 +184,11 @@ header {
 body {
   background: #000; }
 
+.content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto; }
+
 .btn-info:focus,
 .btn-info:hover {
   color: #fff;
@@ -254,14 +259,6 @@ textarea {
   margin: 0 auto;
   width: 100%; }
 
-.cv {
-  width: 100%;
-  background: #fff;
-  padding: 1% 0 0.5%;
-  box-sizing: border-box;
-  max-width: 1280px;
-  margin: 0 auto; }
-
 .logo,
 .menu,
 .call,
@@ -276,9 +273,6 @@ textarea {
 
 .owl-item {
   display: inline-block; }
-
-.owl-dots {
-  display: none; }
 
 .owl-prev {
   float: left; }
@@ -303,6 +297,22 @@ textarea {
 
 .slider1 > .owl-nav {
   margin-top: 0px; }
+.slider1 > .owl-dots {
+  display: none; }
+
+.slider2 {
+  position: relative; }
+
+main .slider2.owl-theme.owl-loaded.owl-drag .owl-prev,
+main .slider2.owl-theme.owl-loaded.owl-drag .owl-next {
+  display: none; }
+
+main .slider2.owl-theme.owl-loaded.owl-drag div.owl-dots {
+  margin-top: -39px;
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  right: 0; }
 
 .call {
   font-size: 14px;
@@ -312,12 +322,8 @@ textarea {
   width: 100%; }
 
 .cv {
-  width: 100%;
   background: #fff;
-  padding: 1% 0 0.5%;
-  box-sizing: border-box;
-  max-width: 1280px;
-  margin: 0 auto;
+  padding: 0.5% 0;
   text-align: justify;
   line-height: 0;
   text-justify: newspaper;
@@ -410,21 +416,6 @@ a {
 #submenu_s4:hover #submenu_4 {
   display: block; }
 
-/* li.submenu_s1.color:hover > div.submenu_1{
-	display: block;
-}
-
-li.submenu_s1.color. li.submenu_s2.color:hover .submenu_2{
-	display: block;
-}
-
-li.submenu_s3.color:hover > div.submenu_3{
-	display: block;
-}
-
-li.submenu_s4.color:hover > div.submenu_4{
-	display: block;
-} */
 #city_name,
 #city_tytle,
 #city_num {
@@ -463,6 +454,93 @@ li.submenu_s4.color:hover > div.submenu_4{
 
 .cv .menu_button {
   display: none; }
+
+.slider2 {
+  padding: 67px 0 0 0;
+  max-width: 1600px;
+  margin: 0 auto; }
+  .slider2 .item {
+    position: relative; }
+  .slider2 .text {
+    position: absolute;
+    max-width: 400px;
+    max-height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    margin: auto;
+    background: rgba(58, 58, 62, 0.8);
+    padding: 1%;
+    box-shadow: 1px 1px 1px 0 rgba(218, 237, 232, 0.5);
+    border-radius: 5px; }
+  .slider2 .head {
+    text-align: center;
+    font-size: 18px;
+    margin: 1% 1% 5%; }
+  .slider2 .tx1 {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 1%;
+    font-size: 15px;
+    text-align: justify;
+    color: #fff; }
+  .slider2 .btn_link {
+    display: inline-block;
+    width: 100%;
+    position: relative; }
+    .slider2 .btn_link button {
+      float: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 36px; }
+
+#item_1 {
+  overflow: hidden;
+  background: #fff; }
+
+input[type=radio].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+input[type=radio].css-checkbox + label.css-label {
+  padding-left: 86px;
+  height: 82px;
+  display: inline-block;
+  line-height: 82px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 82px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+input[type=radio].css-checkbox:checked + label.css-label,
+input[type=radio].css-checkbox:hover + label.css-label {
+  background-position: 0 -82px; }
+
+label.css-label {
+  background-image: url(../img/1qw.png);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+label.radGroup2 {
+  background-image: url(../img/2qw.png);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 .clear:after,
 .clear:before {

@@ -58,9 +58,18 @@ $(document).ready(function() {
     $('.slider1.owl-theme').owlCarousel({
         items : 1,
         autoplay: true,
+        dots: false,
         loop: true,
         // nav: false,
         navText: ["<",">"],
+        autoplayHoverPause:true,
+    });
+    $('.slider2.owl-theme').owlCarousel({
+        items : 1,
+        // autoplay: true,
+        dots: true,
+        loop: true,
+        nav: false,
         autoplayHoverPause:true,
     });
 
