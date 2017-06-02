@@ -396,6 +396,7 @@ a {
 	border:2px solid #fff;
 	border-radius:50%;
 }
+
 input[type=radio].css-checkbox {
     position: absolute;
     z-index: -1000;
@@ -421,10 +422,24 @@ input[type=radio].css-checkbox + label.css-label {
     cursor: pointer;
     color:#fff;
 }
+label.itm_img{
+	display:none;
+	width:100px;
+	height:100px;
+	img{
+		width:100%;
+		height:auto;
+	}
+}
 
 input[type=radio].css-checkbox:checked + label.css-label,
 input[type=radio].css-checkbox:hover + label.css-label {
     background-position: 0 -82px;
+}
+
+input[type=radio].css-checkbox:checked + label.itm_img,
+input[type=radio].css-checkbox:hover + label.itm_img {
+    display:block;
 }
 
 label.css-label {
