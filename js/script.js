@@ -66,11 +66,16 @@ $(document).ready(function() {
     });
     $('.slider2.owl-theme').owlCarousel({
         items : 1,
-        // autoplay: true,
+        autoplay: true,
         dots: true,
         loop: true,
         nav: false,
         autoplayHoverPause:true,
+         responsive:{
+        1600:{
+            items:1,
+        }
+    }
     });
 
 
