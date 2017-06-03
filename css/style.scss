@@ -1,6 +1,6 @@
 @import 'reset';
 @import 'grid';
-$vr-color: #017fb7;
+$vr-color: #3ccae4; //#017fb7
 $vr-color-hover: #5bc0de;
 
 /* Header
@@ -17,12 +17,13 @@ main {
     .content {
         width: 100%;
         max-width: 1600px;
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
 
 body {
-    background: #000;
+    background: url(../img/map.png) center center no-repeat;
+    background-attachment: fixed;
 }
 
 .content {
@@ -101,11 +102,6 @@ textarea {
     box-sizing: border-box;
 }
 
-// .head_row {
-//     max-width: 1600px;
-//     margin: 0 auto;
-//     width: 100%;
-// }
 .logo,
 .menu,
 .call,
@@ -298,12 +294,6 @@ a {
     display: block
 }
 
-#city_name,
-#city_tytle,
-#city_num {
-    display: inline-block;
-}
-
 .cv .menu_button {
     display: none;
 }
@@ -359,24 +349,28 @@ a {
 }
 
 .circle {
-    width: 1000px;
-    height: 1000px;
-    border: 2px solid #fff;
+    width: 641px;
+    height: 641px;
+    border: 2px solid $vr_color;
     border-radius: 50%;
     position: relative;
+    margin:50px auto 0;
     div {}
 }
 
 div.itm_img {
     display: none;
-    width: 100px;
-    height: 100px;
+    width: 450px;
+    height: 300px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    background: rgba(60, 202, 228, .2);
+    border-radius: 20%;
+    overflow:hidden;
     img {
         width: 100%;
         height: auto;
@@ -397,36 +391,192 @@ input[type=radio].css-checkbox {
 }
 
 input[type=radio].css-checkbox + label.css-label {
-    padding-left: 86px;
-    height: 82px;
+    padding-left: 83px;
+    height: 79px;
+    width: 83px;
     display: inline-block;
-    line-height: 82px;
+    line-height: 79px;
     background-repeat: no-repeat;
     background-position: 0 0;
-    font-size: 82px;
+    font-size: 15px;
     vertical-align: middle;
     cursor: pointer;
-    color: #fff;
+    color: #000;
+    position:absolute;
+    background-color:#fff;
+    border-radius:10px;
+}
+
+input[type=radio].css-checkbox + label.css-label.sp_c {
+    padding-left: 88px;
+    height: 82px;
+    width: 88px;
+    line-height: 82px;
+}
+
+input[type=radio].css-checkbox + label.css-label.sp_c1 {
+padding-left: 83px;
+height: 77px;
+width: 83px;
+line-height: 77px;
 }
 
 input[type=radio].css-checkbox:checked + label.css-label,
 input[type=radio].css-checkbox:hover + label.css-label {
-    background-position: 0 -82px;
+    background-position-x: -83px;
 }
 
-input[type=radio].css-checkbox:checked ~ div.itm_img,
+input[type=radio].css-checkbox:checked + label.css-label.sp_c,
+input[type=radio].css-checkbox:hover + label.css-label.sp_c {
+    background-position-x: -88px;
+}
+
+
+input[type=radio].css-checkbox:checked + label.css-label.sp_c1,
+input[type=radio].css-checkbox:hover + label.css-label.sp_c1 {
+    background-position-x: -83px;
+}
+
+
+input[type=radio].css-checkbox:checked ~ div.itm_img {
+    z-index: -1;
+    display: block;
+}
+
 input[type=radio].css-checkbox:hover ~ div.itm_img {
     display: block;
 }
 
-label.radGroup1 {
-    background-image: url(../img/1qw.png);
+input.css-checkbox[type="radio"] + label.css-label.radGroup1 {
+    background-image: url(../img/c_1.png);
     user-select: none;
 }
 
-label.radGroup2 {
-    background-image: url(../img/2qw.png);
+input.css-checkbox[type="radio"] + label.css-label {
+    background-image: url(../img/c_all.png);
     user-select: none;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup2 {
+    background-position: 0 0;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup3 {
+    background-position: 0 -79px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup4 {
+    background-position: 0 -158px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup5 {
+    background-position: 0 -237px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup6 {
+    background-position: 0 -316px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup7 {
+    background-position: 0 -393px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup8 {
+    background-position: 0 -472px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup9 {
+    background-position: 0 -550px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup10 {
+    background-position: 0 -629px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup11 {
+    background-position: 0 -707px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup12 {
+    background-position: 0 -785px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup13 {
+    background-position: 0 -863px;
+}
+
+input.css-checkbox[type="radio"] + label.radGroup14 {
+    background-position: 0 -942px;
+}
+
+.i1 {
+    top: -42px;
+    left: 270px;
+}
+
+.i2 {
+    top: 0px;
+    left: 126px;
+}
+
+.i3 {
+    top: 92px;
+    left: 18px;
+}
+
+.i4 {
+    top: 205px;
+    left: -39px;
+}
+
+.i5 {
+    top: 355px;
+    left: -39px;
+}
+
+.i6 {
+    top: 469px;
+    left: 18px;
+}
+
+.i7 {
+    top: 564px;
+    left: 122px;
+}
+
+.i8 {
+    top: 599px;
+    left: 277px;
+}
+
+.i9 {
+    top: 564px;
+    left: 430px;
+}
+
+.i10 {
+    top: 469px;
+    left: 538px;
+}
+
+.i11 {
+    top: 355px;
+    left: 600px;
+}
+
+.i12 {
+    top: 205px;
+    left: 600px;
+}
+
+.i13 {
+    top: 92px;
+    left: 538px;
+}
+
+.i14 {
+    top: 0px;
+    left: 430px;
 }
 
 .menu_button {
@@ -444,6 +594,7 @@ label.radGroup2 {
         right: 10px;
         ul li {
             float: none;
+            text-align: left;
             #submenu_1,
             #submenu_2,
             #submenu_3,
@@ -503,6 +654,21 @@ label.radGroup2 {
     }
 }
 
+.price-button{
+	margin:70px 0;
+	vertical-align:baseline;
+	div:first-child{
+		margin:0 0 0 10px;
+	}
+	div:last-child{
+		margin:0 10px 0 0;
+	}
+}
+
+.price-button.cv{
+	background-color: transparent;
+}
+
 .slider2 {
     .item {
         img {
@@ -511,6 +677,129 @@ label.radGroup2 {
         }
     }
 }
+.about_company{
+	background: url(../img/2-layers.png) center center no-repeat;
+	background-size: cover;
+	.artcle{
+		padding:5%;
+		font-size:16px;
+		line-height:20px;
+		text-align:justify;
+	}
+}
+.slider3{
+	width:95%;
+	margin:0 auto;
+	overflow:hidden;
+	height: 93px;
+	.owl-stage-outer{
+		position:relative;
+	}
+	.owl-nav{
+		margin-top: -61px;
+position: relative;
+// width: 100%;
+	}
+}
+.title{
+	text-align:center;
+	font-size:20px;
+	text-transform:uppercase;
+margin: 10px auto;
+	// width:100%
+}
+
+
+/*----------------------footer----------------------*/
+.foterBeckground{
+    padding: 30px 0;
+    background-color: #333333;
+}
+
+.row{
+	font-size:0;
+	>div{
+		display:inline-block;
+		vertical-align:top;
+		width:23%;
+		padding:1%;
+		margin:1%;
+	}
+}
+
+.widgettitle{
+    font-size: 22px;
+    color: #3ccae4;
+    font-family: "LatoRegular";
+    font-weight: 300;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.menuFoter{
+    list-style-type: none;
+}
+.menuFoter li {
+    color: #999999;
+    padding: 8px 0;
+    border-bottom: 1px solid #4d4d4d;
+}
+.menuFoter li a{
+    color: #999999;
+    font-size: 14px;
+    transition: 1s;
+    font-weight: 300;
+}
+
+.menuFoter li span{
+    margin-right: 10px;
+    font-size:22px;
+    color: #999999;
+}
+
+.imgc{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+}
+.imgc img{
+    width: 100%;
+    height: 100%;
+}
+
+.textImgFoter{
+    margin-left: 35px;
+    display: inline-block;
+    color: #999999;
+}
+
+
+.menuFoter li:hover a{
+    transition: 1s;
+    color: #ffffff;
+}
+
+.menuFoter li:hover .textImgFoter{
+    transition: 1s;
+    color: #ffffff;
+}
+
+.menuFoter li:hover span{
+    transition: 1s;
+    color: #ffffff;
+}
+
+.foter{
+ position: relative;
+}
+
+
+.imgTransport img{
+  width:100%;
+}
+
+/*------------------footer-------------------------*/
 
 .clear:after,
 .clear:before {
@@ -542,8 +831,8 @@ label.radGroup2 {
 }
 
 @media (max-width: 1042px) {
-    .item .text{
-    	display:none;
+    .item .text {
+        display: none;
     }
     .cv > .call {
         display: none;
@@ -554,6 +843,11 @@ label.radGroup2 {
     .logo {
         width: 32.26%;
     }
+    .row{
+	>div{
+		width:48%;
+	}
+}
 }
 
 @media (max-width: 600px) {
@@ -566,4 +860,12 @@ label.radGroup2 {
     .cv .logo {
         margin-left: 5%;
     }
+}
+
+@media (max-width: 420px) {
+    .row{
+	>div{
+		width:98%;
+	}
+}
 }

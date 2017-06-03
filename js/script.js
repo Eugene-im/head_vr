@@ -19,20 +19,6 @@ $(document).ready(function() {
         return false;
     });
 
-    if($("#my_select option:selected").val()=="выберите город"){
-        $("#city_n").text("+38 044 232 41 39");
-        $("#city_n").attr("href","tel:+380442324139");
-    }
-    
-    else{
-        $("#city_n").text($("#my_select option:selected").val());
-        $("#city_n").attr("href","tel:" + $("#my_select option:selected").val());
-    }
-    
-    $("select").change(function(){
-        $("#city_n").text($("#my_select option:selected").val());
-        $("#city_n").attr("href","tel:" + $("#my_select option:selected").val());
-    });
 
     $(".call_back").click(function () {
         $(".asd").toggle()
@@ -77,10 +63,29 @@ $(document).ready(function() {
         }
     }
     });
+    $('.slider3.owl-theme').owlCarousel({
+        // items : 1,
+        autoplay: true,
+        dots: false,
+        loop: true,
+        // nav: false,
+        navText: ["<",">"],
+        autoplayHoverPause:true,
+         responsive:{
+        1600:{
+            items:10,
+        },
+        1000:{
+            items:8,
+        },
+        800:{
+            items:6,
+        },
+        500:{
+            items:3,
+        }
+    }
+    });
 
 
 });
-    
-    function myFunction(x) {
-    x.classList.toggle("change");
-}
