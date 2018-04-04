@@ -302,7 +302,8 @@ textarea {
   display: none; }
 
 .slider2 {
-  position: relative; }
+  position: relative; 
+overflow: hidden;}
 
 main .slider2.owl-theme.owl-loaded.owl-drag .owl-prev,
 main .slider2.owl-theme.owl-loaded.owl-drag .owl-next {
